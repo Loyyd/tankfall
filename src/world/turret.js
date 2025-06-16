@@ -31,7 +31,7 @@ export class Turret {
         this.wanderTimers = new Map(); // Store timer for each turret
         
         // Preload the turret model
-        this.loader.load('/assets/turret.glb', (gltf) => {
+        this.loader.load(import.meta.env.BASE_URL + '/assets/turret.glb', (gltf) => {
             this.loadedTurretModel = gltf.scene;
             // Store both animations
             this.shootAnimation = gltf.animations.find(anim => anim.name === "SHOOT_ANIM");

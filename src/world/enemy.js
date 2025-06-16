@@ -32,7 +32,7 @@ class Enemy {
 
     // Load the model
     const loader = new GLTFLoader();
-    loader.load('/assets/enemy.glb', (gltf) => {
+    loader.load(import.meta.env.BASE_URL + '/assets/enemy.glb', (gltf) => {
       this.model = gltf.scene;
       this.model.scale.set(0.4, 0.4, 0.4);
       this.model.rotation.y = Math.PI; // Make model face forward initially
