@@ -40,10 +40,9 @@ class Player extends THREE.Mesh {
         this.physicsBody = null;
     }
 
-
     loadModel(scene) {
         const loader = new GLTFLoader();
-        loader.load(`${import.meta.env.BASE_URL}assets/tank.glb`, (gltf) => {
+        loader.load(import.meta.env.BASE_URL + '/assets/tank.glb', (gltf) => {
             const tank = gltf.scene;
             tank.scale.set(0.3, 0.3, 0.3);
             this.add(tank);
