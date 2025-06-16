@@ -1,7 +1,7 @@
 import { GameState } from '../core/settings.js';
 const TEMPLATE_PATHS = {
-    UPGRADE_COMPONENT: 'public/templates/upgrade-component.html',
-    UPGRADES: 'public/templates/upgrades.html'
+    UPGRADE_COMPONENT: import.meta.env.BASE_URL + 'public/templates/upgrade-component.html',
+    UPGRADES: import.meta.env.BASE_URL + 'public/templates/upgrades.html'
 };
 
 //SHOTRADIUS
