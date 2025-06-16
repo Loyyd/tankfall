@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/Flying_Cube/', // Replace with your repository name
   plugins: [
     {
       name: 'html-full-reload',
