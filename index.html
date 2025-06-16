@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Cube Game - Enhancedd</title>
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="public/css/index.css">
+  <link rel="stylesheet" href="public/css/esc-menu.css">
+  <style>
+    #place-cube-btn.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="score-container"><span id="score-label">Score: </span><span id="score-value">0</span></div>
+  <div id="debug-mode-indicator">Debug Mode: OFF (Press F2 to toggle)</div>
+  
+  <div id="canvas-container"></div>
+  <div id="cooldown-bar-container">
+    <svg id="cooldown-bar" viewBox="0 0 36 36">
+      <path
+        class="circle-bg"
+        d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path
+        class="circle"
+        d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+    </svg>
+  </div>
+  <div id="shot-radius-ui-container"></div>
+  <div id="place-cube-btn">Place Turret 250</div>  <div id="game-over-message">GAME OVER</div>
+  <button id="restart-button">Restart Game</button>
+
+  <div id="esc-menu" class="hidden">
+    <h2>Paused</h2>
+    <button id="resume-button">Resume</button>
+    <button id="settings-button">Settings</button>
+    <button id="restart-esc-button">Restart</button>  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
