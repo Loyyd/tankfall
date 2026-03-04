@@ -2,7 +2,7 @@
 
 Welcome to **Tankfall**, a personal project of mine where I combine my passion for 3D modeling and web development. As a student exploring the intersection of these fields, I've built this interactive 3D game using **Three.js** for rendering and **Cannon.js** for physics.
 
-🚀 **[Play Tankfall here!](https://konradkunkel.github.io/tankfall/)**
+🚀 **[Play Tankfall here!](https://loyyd.github.io/tankfall/)**
 
 ## 🎮 Gameplay
 In Tankfall, you control a high-tech tank in a stylized 3D environment. The goal is to survive waves of enemies by utilizing your mobility and firepower.
