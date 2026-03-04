@@ -18,5 +18,5 @@ export default defineConfig({
       },
     }
   ],
-  base: '/Flying_Cube/',
+  base: '/tankfall/',
 });

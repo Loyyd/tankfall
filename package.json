@@ -1,8 +1,9 @@
 {
-  "name": "flying-cube",
+  "name": "tankfall",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://konradkunkel.github.io/tankfall/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
